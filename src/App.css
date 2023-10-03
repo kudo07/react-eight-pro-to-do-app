@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(to left, rgb(12, 12, 12), rgb(74, 75, 76));
+  color: aliceblue;
+}
+* {
+  box-sizing: border-box;
+}
+main {
+  max-width: 300px;
+  margin: 20px auto;
+}
+form {
+  border: 5px solid rgb(60, 58, 71);
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+}
+form input[type="text"] {
+  background: none;
+  border: 0;
+  color: aliceblue;
+  padding: 20px 20px;
+  display: block;
+  width: 100%;
+}
+form button {
+  background-color: rgb(154, 116, 251);
+  background: linear-gradient(to left, rgb(103, 60, 212), rgb(127, 101, 188));
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0px 20px;
+  margin-right: 2px;
+}
+
+div.task {
+  background-color: #4d4966;
+  padding: 15px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-left: 4px;
+  align-items: center;
+
+  display: flex;
+  transition: opacity 0.3s linear;
+}
+div.Checkbox {
+  display: flex;
+  align-items: center;
+}
+div.task i {
+  margin: 4px;
+  /* background-color: rgb(90, 58, 168);
+  fill: rgb(90, 58, 168); */
+}
+div.task.done {
+  opacity: 0.42;
+  /* text-decoration: line-through; */
+  /* color: #080808; */
+}
+div.task span {
+  position: relative;
+}
+div.task-name {
+  flex-grow: 1;
+}
+div.task span:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #080808;
+  position: absolute;
+  top: 10px;
+  transition: width 0.1s linear;
+}
+div.task.done span:before {
+  width: 100%;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+button.trash {
+  background: none;
+  border: none;
+
+  display: flex;
+}
+button.trash {
+  fill: #4d4966;
+  height: 24px;
+  cursor: pointer;
+}
